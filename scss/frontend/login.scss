@@ -1,0 +1,148 @@
+.customer_info_forms.row {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    position: relative;
+  }
+  .customer_form_wrap{
+    h2{
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+
+    }
+    .login-info{
+      font-weight: 400;
+      font-size: 1.3rem;
+    }
+  }
+  
+  .login_tabs{
+    .astrick{
+      color:#f00;
+    }
+    .login_title{
+      color:#222;
+      font-size:1.5rem;
+      font-weight: 500;
+    }
+    .form-group{
+      margin-bottom: 1.5rem;
+    }
+    .ckbox{
+      font-size: 1.3rem;
+    }
+  }
+  .login_head{
+    font-size: 2.2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eaeaea;
+    font-weight: 400;
+    margin-bottom: 1.8rem;
+  }
+  .password_eye{
+    position: relative;
+    .field-icon{
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 4rem;
+      display: inline-block;
+      line-height: 4rem;
+      width: 3rem;
+      text-align: center;
+      font-size:2rem;
+      color:#222;
+    }
+  }
+  
+  .facebook_button {
+    background: #4368af;
+    color: #fff;
+    &:hover{
+      background: #143575;
+      color:#fff;
+    }
+  }
+  .google_button {
+    background: #e45547;
+    color: #fff;
+    &:hover{
+      background: #bd2b1d;
+      color:#fff;
+    }
+  }
+  
+  .social_account_button{
+    border: 0;
+    padding: 1rem;
+    box-sizing: border-box;
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-bottom: .8rem;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  .login_btn{
+    .btn_theme{
+        width: 100%;
+    }
+  }
+  .login_flex{
+    display: flex;
+    flex-direction: row;
+    .loginRight_flex{
+      margin-left: auto;
+    }
+  }
+  .close_btn {
+    position: absolute;
+    right: 14px;
+    top: 8px;
+    z-index: 9;
+}
+.customer_form_wrap.login_tabs {
+    padding: 2rem;
+}
+.customer_form_wrap input[type="checkbox"]{
+    height: 1.5rem;
+    width: 1.5rem;
+    vertical-align: middle;
+    margin-right: .5rem;
+}
+.login_bg{
+    background: #fff;
+    padding: 3rem;
+    box-shadow: 0 0 30px rgba(0,0,0,0.1);
+    margin-top: 5%;
+}
+
+.guest_login{
+  text-align: center;
+  padding: 2rem 0 3rem;
+  a{
+    font-size: 1.6rem;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    background: $hover_color;
+    padding: 1rem 1.8rem;
+    border-radius: 5px;
+    &:hover{
+      color: #fff;
+      opacity: .8;
+    }
+  }
+}
+.form_top{
+  text-align: right;
+  margin: 2rem 0;
+}
+.login_bg{
+  h3{
+    font-weight: 700;
+    margin-bottom: 3rem;
+    font-size: 2.2rem;
+  }
+}

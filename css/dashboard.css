@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Titillium+Web:wght@200;300;400;600;700;900&display=swap");
+.dashboard_sidebar {
+  background: #022561;
+  border-radius: .5rem; }
+
+.top_dashboard_sidebar {
+  text-align: center;
+  border-bottom: 1px solid #143b7c;
+  padding: 1rem;
+  margin-bottom: 2rem; }
+  .top_dashboard_sidebar h2 {
+    color: #fff;
+    font-weight: 700; }
+  .top_dashboard_sidebar span {
+    color: #eee; }
+
+.dashboard_section {
+  margin-top: 5rem; }
+
+.dashboard_sidebar_detail {
+  padding-bottom: 1rem; }
+  .dashboard_sidebar_detail ul li {
+    border-bottom: 1px solid #123063;
+    padding: 0 1rem 1rem;
+    margin-bottom: 1rem; }
+    .dashboard_sidebar_detail ul li:last-child {
+      border-bottom: 0;
+      padding: 0 1rem;
+      margin-bottom: 0; }
+    .dashboard_sidebar_detail ul li a {
+      display: block;
+      color: #fff; }
+      .dashboard_sidebar_detail ul li a i {
+        display: inline-block;
+        font-size: 1.8rem;
+        margin-right: .8rem; }
+      .dashboard_sidebar_detail ul li a:hover {
+        color: #FF9315; }
+
+.dashboard_profile {
+  background: #fff;
+  border: 1px solid #eee;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+  margin-left: 6rem;
+  border-radius: .5rem; }
+
+.dashboard_form .label_title {
+  display: block; }
+
+.dashboard_box_head {
+  border-bottom: 1px solid #eee;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem; }
+  .dashboard_box_head h2 {
+    font-weight: 700;
+    margin-bottom: 0; }
+
+.dashboard_inner {
+  padding: 2rem; }
+
+.dashboard_form {
+  margin-bottom: 2rem; }
+  .dashboard_form .login_title {
+    font-weight: 500;
+    margin-bottom: .8rem; }
+  .dashboard_form .form-control {
+    border: 0;
+    border-bottom: 1px solid #dedede; }
+
+.dashboard_form.form_top {
+  text-align: left;
+  margin-top: 4rem; }
+
+.dashboard_sidebar_detail ul li.active a {
+  color: #FF9315; }
+
+@media only screen and (max-width: 767px) {
+  .dashboard_profile {
+    margin: 2rem 0 0; } }
+
+/*# sourceMappingURL=dashboard.css.map */

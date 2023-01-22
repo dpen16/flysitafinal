@@ -1,0 +1,422 @@
+// Team Section //
+.team_box {
+  background: #fff;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.17);
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  figure {
+  margin-bottom: 0;
+  position: relative;
+  overflow: hidden;
+  img {
+    transition: all 0.3s ease-in-out;
+  }
+  }
+  a {
+  color: $body_color;
+  }
+}
+.team_content {
+  position: relative;
+  padding: 1.8rem;
+  box-sizing: border-box;
+  text-align: center;
+  h3 {
+  color: $body_color;
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-bottom: 0;
+  font-weight: 600;
+  }
+  span {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  }
+.team_arrow {
+  position: absolute;
+  text-align: center;
+  top: -24px;
+  left: 0;
+  right: 0;
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  color: $theme_color;
+  background: #ffffff;
+  -webkit-transform: translate3d(-0%, 0, 0);
+  transform: translate3d(-0%, 0, 0);
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+  margin: 0 auto;
+  line-height: 43px;
+  }
+  .bi-chevron-up::before {
+  transition: all 0.2s ease-in-out;
+  }
+}
+.team_box {
+  &:hover {
+  background: $hover_color;
+  .team_arrow {
+    background: $hover_color;
+    color: #fff;
+  }
+  .bi-chevron-up::before {
+    content: "\f286";
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  a {
+    color: #fff;
+  }
+  .team_content {
+    h3 {
+    color: #fff;
+    }
+  }
+  figure {
+    img {
+    transform: scale(1.1);
+    }
+  }
+  }
+}
+.team_list {
+  margin-bottom: 1.2rem;
+}
+.project_list_single {
+  margin-bottom: 0.8rem;
+  figure {
+  img {
+    border-radius: 0.5rem;
+  }
+  }
+}
+.team_detail_content {
+  padding: 3rem 0 0 3rem;
+  .team_post {
+  text-transform: uppercase;
+  color: $theme_color;
+  }
+  h3 {
+  font-size: 3rem;
+  font-weight: 500;
+  }
+}
+.team_detail_top {
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.team_detail_content {
+  ul {
+  padding: 0;
+  li {
+    display: flex;
+    align-items: center;
+    i {
+    font-size: 2rem;
+    color: $theme_color;
+    line-height: 1.86;
+    flex: 0 0 35px;
+    }
+    label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    flex: 0 0 90px;
+    margin-bottom: 0;
+    }
+    a {
+    color: $body_color;
+    }
+  }
+  }
+}
+.team_detail_infos {
+  p {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  font-weight: 400;
+  }
+}
+.team_list_wrap h2{
+  background: #e9f5ff;
+  margin: 0 0 2rem;
+  padding: 0.8rem;
+  font-weight: 600;
+}
+.team_list_wrap {
+  margin: 3rem 0;
+}
+// Breadcrumb //
+.breadcrumb_bg {
+  min-height: 30rem;
+  position: relative;
+  overflow: hidden;
+  &:before {
+    background-image: linear-gradient(60deg, #690ed0, #170da2);
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  }
+  .shape_contact {
+  img {
+    position: absolute;
+  }
+  img.circle-2 {
+    right: 12%;
+    top: 48%;
+  }
+  }
+  .breadcrumb_title {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  z-index: 9;
+  flex-direction: column;
+  h1 {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  }
+  .breadcrumb_info {
+  margin-top: 1.8rem;
+  .breadcrumb {
+    border: 1px solid #fff;
+    padding: 0.8rem 3rem;
+    border-radius: 0.5rem;
+    a {
+    color: #fff;
+    }
+  }
+  }
+  .breadcrumb-item.active {
+  color: #d5d9dd;
+  }
+  .breadcrumb_section {
+  margin-bottom: 8rem;
+}
+.listing_col{
+  margin-bottom: 2rem;
+}
+// About Section //
+
+.about-one {
+  figure {
+    margin: 0 auto;
+    max-width: 85%;
+  }
+  }
+  .about-second {
+  figure {
+    margin: 2rem 0.2rem;
+    margin-left: -20px;
+  }
+  }
+  .about_infos_sec {
+  padding-right: 4rem;
+  p {
+    font-size: 1.6rem;
+    line-height: 1.9;
+  }
+  }
+  .single_title_head {
+  margin-bottom: 2rem;
+  h2 {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 3.8rem;
+  }
+  p {
+    color: #222;
+  }
+  span {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    color: $theme_color;
+    position: relative;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    &:after {
+    content: "";
+    height: 0.2rem;
+    background: $theme_color;
+    position: absolute;
+    min-width: 2rem;
+    top: 9px;
+    right: -30px;
+    }
+  }
+  }
+  .about_infos_sec .sub_text {
+  color: $theme_color;
+  font-weight: 500;
+  font-size: 1.8rem;
+  font-style: italic;
+  }
+  .about_choose {
+  margin-top: 4rem;
+  }
+  .about_bg {
+  background: #f8f6f7;
+  padding: 5rem 2rem;
+  }
+  .about_right_section {
+  padding-left: 2rem;
+  position: relative;
+  height: 100%;
+  &:after {
+    content: "";
+    height: 100%;
+    border-left: 6px solid $theme_color;
+    position: absolute;
+    top: 0;
+    left: -30px;
+    border-radius: 5px;
+    display: none;
+  }
+  }
+  .about_infos {
+  margin-bottom: 2.5rem;
+  p {
+    font-size: 1.6rem;
+  }
+  h2{
+    font-weight: 600;
+  }
+  }
+  .about_head_section {
+  max-width: 80rem;
+  h2 {
+    font-size: 5rem;
+    font-weight: 700;
+    max-width: 58rem;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+  }
+  p {
+    font-size: 1.7rem;
+  }
+  }
+  // Accordion Section //
+  .accordion-button {
+  font-size: 1.5rem;
+  padding: 1.8rem;
+  font-weight: 600;
+  }
+  .accordion-item {
+  margin-bottom: 1.5rem;
+  }
+  .accordion-button:not(.collapsed),
+  .accordion-button:focus {
+  box-shadow: initial;
+  }
+  .accordion-item:not(:first-of-type) {
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  }
+  // Single Page //
+.single_content_infos{
+  ul{
+    padding-left: 1.5rem;
+    li{
+    margin-bottom: .5rem;
+    }
+  }
+  ol{
+    padding-left: 1.5rem;
+    li{
+      margin-bottom: .5rem;
+    }
+  }
+  h3{
+    margin: 1.2rem 0;
+    font-weight: 700;
+  }
+  }
+  .title_single{
+  font-weight: 600;
+  }
+  
+  // Flight Routes //
+  .flight_routes{
+    h2{
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+  }
+  // Flight Info //
+  .flight_info_top{
+    margin-bottom: 3rem;
+  }
+  .flight_info_details{
+    background: $head_color;
+    padding: 2rem;
+    border-radius: .5rem;
+    .flight_list_col {
+      border-bottom: 1px solid #173b78;
+      padding-bottom: 1.8rem;
+      margin-bottom: 1.8rem;
+      &:last-child{
+        border-bottom: 0;
+        padding-bottom: 0;
+        margin-bottom: 0;
+      }
+    }
+  }
+  .departure_title{
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    display: block;
+    font-size: 2.2rem;
+  }
+  .departure_title_sub{
+    color: #fff;
+    font-size: 1.6rem;
+  }
+  .departure_sec_title{
+    display: block;
+    color: #cbcbcb;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+  }
+  .departure_item{
+    color: #fff;
+  }
+  .flight_status_details{
+    
+    .flight_list_col {
+      background: $head_color;
+      padding: 2rem;
+      border-radius: .5rem;
+      margin-bottom: 1.8rem;
+    
+    }
+  }
+  @media only screen and (max-width:767px){
+    .departure_infos{
+      max-width: 50%;
+      margin-bottom: 1.5rem;
+    }
+    .flight_info_list{
+      margin-bottom: 1.5rem;
+    }
+    .dashboard_profile{
+      margin: 2rem 0 0;
+    }
+  }

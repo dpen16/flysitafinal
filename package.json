@@ -1,0 +1,13 @@
+{
+  "name": "grid",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "compile": "node-sass scss/style.scss css/style.css --w  --source-map true  --output-style compressed",
+    "dashboard": "node-sass scss/dashboard.scss css/dashboard.css --w  --source-map true  --output-dashboard compressed"
+  },
+  "dependencies": {
+    "node-sass": "^7.0.3"
+  }
+}

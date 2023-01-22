@@ -1,0 +1,872 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fly Sita</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="fonts/bootstrapicon/font/bootstrap-icons.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+
+    <header>
+      <section class="top_header">
+        <div class="container">
+          <div class="top_header-flex">
+            <div class="top_header-left">
+              <a href="index.html">
+                <figure>
+                  <img src="images/logo.png" alt="title" class="img-fluid">
+                </figure>
+              </a>
+            </div>
+
+            <div class="top_header-right">
+              <ul class="list-unstyled">
+                <li class="navbar_support dropdown dropdown-common">
+                  <a href="javascript:void(0)" class="dropdown-toggle" id="support" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="bi bi-headset"></i>
+                    <span>Support</span>
+                  </a>
+                  <div class="dropdown-menu support-dropdown-menu" aria-labelledby="support">
+                    <div class="top_login_support">
+                      <a href="login.html" class="btn btn-login">Sign In / Sign Up</a>
+                    </div>
+
+                    <div class="support_grid">
+                      <div class="support_grid-left">
+                        <h2>Account</h2>
+                        <ul>
+                          <li><a href="#"><i class="bi bi-briefcase-fill"></i> Trips</a></li>
+                          <li><a href="#"><i class="bi bi-heart-fill"></i>Shortlist</a></li>
+                          <li><a href="#"><i class="bi bi-people-fill"></i>Travellers</a></li>
+                          <li><a href="#"><i class="bi bi-wallet2"></i>Wallet</a></li>
+                        </ul>
+                      </div>
+
+                      <div class="support_grid-right">
+                        <h2>Quick Tools</h2>
+                        <ul>
+                          <li><a href="#"><i class="bi bi-x-circle"></i> Cancellations</a></li>
+                          <li><a href="#"><i class="bi bi-airplane"></i>Change Flight</a></li>
+                          <li><a href="#"><i class="bi bi-printer"></i>Print Ticket</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <a href="login.html">
+                    <i class="bi bi-person-circle"></i>
+                    <span>Sign In / Sign Up</span>
+                  </a>
+                </li>
+              </ul>
+              
+            </div>
+            
+          </div>
+        </div>
+      </section>
+      
+      <section class="menu_header ">
+        <div class="container">
+          <div class="menu__head">
+            <div class="sidemenu sidemenu-1 d-lg-none d-md-block">
+              <a class="open" href="javascript:void(0)"><i class="bi bi-list"></i></a>
+            </div>
+
+
+            <div class="main-menu">
+              <nav id="mobile-menu">
+                <ul>
+                  <li class="active"><a href="index.html">Home</a></li>
+                  <li class="menu-item-has-children"><a href="javascript:void(0)">Company</a>
+                    <ul class="sub-menu">
+                      <li><a href="about.html">About Us</a></li>
+                    </ul>
+                  </li>
+        
+                  <li class=""><a href="flight-info.html">Flight Information</a></li>
+                  <li class=""><a href="blog.html">Notice</a></li>
+                  <li class=""><a href="routes.html">Flight Routes</a></li>
+                  
+                </ul>
+
+               
+              </nav>
+              <div class="menu_right">
+                <ul>
+                  <li>
+                    <div class="navbar-language dropdown language-option">
+                      <a href="javascript:void(0)" class="dropdown-toggle" id="language1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="bi bi-globe"></i>
+                        <span class="lang-name"></span>
+                      </a>
+                      <div class="dropdown-menu language-dropdown-menu" aria-labelledby="language1">
+                        <a class="dropdown-item" href="#">
+                          <img src="images/uk.png" alt="flag">
+                          English
+                        </a>
+                        <a class="dropdown-item" href="#">
+                          <img src="images/nepali.webp" alt="flag">
+                          Nepali
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="navbar-currency dropdown currency-option">
+                      <a href="javascript:void(0)" class="dropdown-toggle" id="currency1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="bi bi-cash-stack"></i>
+                        <span class="currency-name">Currency</span>
+                      </a>
+                      <div class="dropdown-menu currency-dropdown-menu" aria-labelledby="currency1">
+                        <a class="dropdown-item" href="#">Nrs</a>
+                        <a class="dropdown-item" href="#">Dollar</a>
+                        <a class="dropdown-item" href="#">Indian Rupees</a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+    </header>
+
+    <div class="fixes">
+      <div class="side-info">
+          <button class="side-info-close"><i class="bi bi-x-lg"></i></button>
+          <div class="side-info-content">
+            <div class="mobile-menu"></div>
+          </div>
+      </div>
+    </div>
+
+    <div class="offcanvas-overlay"></div>
+
+
+    <section id="flight_search" class="sticky-top flight_search_inner">
+      <div class="container">
+        <form>
+          <div class="flight_bg">
+            <div class="flight_search_grid mt-0">
+              <div class="flight_search_list">
+                <label>From</label>
+                <p>Kathmandu <strong>(KTM)</strong></p>
+              </div>
+
+              <div class="flight_search_list">
+                <div class="icon_flight">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.9725 5.82918C15.1183 5.82918 15.2581 5.88709 15.3612 5.99019C15.4643 6.09329 15.5222 6.23312 15.5222 6.37892C15.5222 6.52471 15.4643 6.66454 15.3612 6.76764C15.2581 6.87074 15.1183 6.92865 14.9725 6.92865L1.45659 6.92865C1.34795 6.92863 1.24174 6.89642 1.1514 6.83608C1.06105 6.77574 0.990602 6.68998 0.948957 6.58963C0.907313 6.48929 0.896335 6.37885 0.917412 6.27227C0.938488 6.16569 0.990673 6.06774 1.06738 5.9908L6.17665 0.880424C6.22772 0.829229 6.28838 0.788611 6.35517 0.760897C6.42196 0.733183 6.49356 0.718917 6.56587 0.718917C6.63818 0.718917 6.70978 0.733183 6.77656 0.760897C6.84335 0.788611 6.90402 0.829229 6.95508 0.880424L6.95508 0.882623C7.05781 0.985669 7.11549 1.12524 7.11549 1.27074C7.11549 1.41624 7.05781 1.55581 6.95508 1.65885L2.78146 5.82918L14.9725 5.82918ZM14.1951 9.12761C14.3037 9.12785 14.4097 9.16022 14.4999 9.22064C14.5901 9.28107 14.6604 9.36684 14.7019 9.46714C14.7434 9.56744 14.7543 9.67778 14.7332 9.78426C14.7121 9.89074 14.6599 9.98859 14.5833 10.0655L9.47509 15.1758C9.42402 15.227 9.36336 15.2677 9.29657 15.2954C9.22978 15.3231 9.15818 15.3373 9.08587 15.3373C9.01356 15.3373 8.94196 15.3231 8.87517 15.2954C8.80839 15.2677 8.74772 15.227 8.69666 15.1758L8.69666 15.1736C8.59393 15.0706 8.53625 14.931 8.53625 14.7855C8.53625 14.64 8.59393 14.5005 8.69666 14.3974L12.8681 10.2271L0.67926 10.2271C0.53346 10.2271 0.393632 10.1692 0.290536 10.0661C0.18744 9.96298 0.129521 9.82315 0.129521 9.67735C0.129521 9.53155 0.18744 9.39172 0.290536 9.28863C0.393632 9.18553 0.53346 9.12761 0.67926 9.12761L14.1951 9.12761Z" fill="black"/>
+                  </svg>
+                    
+                </div>
+              </div>
+
+              <div class="flight_search_list">
+                <label>To</label>
+                <p>Pokhara <strong>(PKR)</strong></p>
+              </div>
+
+              <div class="flight_search_list">
+                <label>Departure</label>
+                <p>12/5/2022</p>
+              </div>
+
+              <div class="flight_search_list">
+                <label>Nationality</label>
+                <p>Nepali</p>
+              </div>
+
+              <div class="flight_search_list">
+                <label>Traveller</label>
+                <p>1 Adult, 1 Children</p>
+              </div>
+
+              <div class="flight_search_list">
+                <button type="submit" value="" class="btn btn_theme">Modify Flight</button>
+              </div>
+
+    
+
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    
+    <main>
+      <section id="search_flight_process" class="search_flight_process_col">
+
+        <div class="flight_progress">
+          <div class="container">
+            <ul class="list-unstyled">
+              <li class="active">
+                <div class="flight_progress_ic">
+                  <i class="las la-plane"></i>
+                </div>
+                <span>Flight</span>
+              </li>
+
+              <li class="">
+                <div class="flight_progress_ic">
+                  <i class="las la-user-tie"></i>
+                </div>
+                <span>Passengers</span>
+              </li>
+
+              <li class="">
+                <div class="flight_progress_ic">
+                  <i class="las la-wallet"></i>
+                </div>
+                <span>Payment</span>
+              </li>
+
+              <li class="">
+                <div class="flight_progress_ic">
+                  <i class="las la-ticket-alt"></i>
+                </div>
+                <span>Ticket</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="container">
+          <section class="flight_schedule">
+            <h1>Flight List</h1>
+            <div class="swiper flightSchedule-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#">
+                    <div class="schedule_bg">
+                      <p>Wed 7 Dec,2022</p>
+                      <strong>Npr 4800*</strong>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="swiper-slide">
+                  <a href="#">
+                    <div class="schedule_bg">
+                      <p>Wed 8 Dec,2022</p>
+                      <strong>Npr 4800*</strong>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="swiper-slide">
+                  <a href="#">
+                    <div class="schedule_bg">
+                      <p>Wed 9 Dec,2022</p>
+                      <strong>Npr 4800*</strong>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="swiper-slide">
+                  <a href="#">
+                    <div class="schedule_bg">
+                      <p>Wed 10 Dec,2022</p>
+                      <strong>Npr 4800*</strong>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="swiper-slide">
+                  <a href="#">
+                    <div class="schedule_bg">
+                      <p>Wed 11 Dec,2022</p>
+                      <strong>Npr 4800*</strong>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="swiper-slide">
+                  <a href="#">
+                    <div class="schedule_bg">
+                      <p>Wed 12 Dec,2022</p>
+                      <strong>Npr 4800*</strong>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="swiper-slide">
+                  <a href="#">
+                    <div class="schedule_bg">
+                      <p>Wed 13 Dec,2022</p>
+                      <strong>Npr 4800*</strong>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="swiper-slide">
+                  <a href="#">
+                    <div class="schedule_bg">
+                      <p>Wed 14 Dec,2022</p>
+                      <strong>Npr 4800*</strong>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="swiper-slide">
+                  <a href="#">
+                    <div class="schedule_bg">
+                      <p>Wed 15 Dec,2022</p>
+                      <strong>Npr 4800*</strong>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="swiper-slide">
+                  <a href="#">
+                    <div class="schedule_bg">
+                      <p>Wed 16 Dec,2022</p>
+                      <strong>Npr 4800*</strong>
+                    </div>
+                  </a>
+                </div>
+
+                
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </section>
+
+          <section class="flight_schedule_main">
+            <div class="flight_schedule_list">
+              <div class="flight_schedule_bg">
+                <div class="flight_schedule_top">
+                  <div class="flight_logo">
+                    <figure>
+                      <img src="images/logo.png" alt="title" class="img-fluid">
+                    </figure>
+                  </div>
+
+                  <div class="flight_code"><strong>SA663</strong></div>
+                </div>
+                <div class="flight_schedule_grid">
+                  <div class="flight_schedule_info">
+                    <div class="flight_inner_grid d-grid">
+                      <div class="flight_inner_list">
+                        <label class="d-block text-uppercase">Departure</label>
+                        <span class="d-block text-uppercase flight_inner_title">ktm</span>
+                        <span class="d-block flight_inner_sub">Kathmandu</span>
+                        <label class="d-block label_duration">15 min</label>
+                        <label class="d-block label_day">Wednesday December 7</label>
+                      </div>
+
+                      <div class="flight_inner_list ic_flight">
+                        <i class="bi bi-airplane-fill"></i>
+                      </div>
+
+                      <div class="flight_inner_list">
+                        <label class="d-block text-uppercase">arrival</label>
+                        <span class="d-block text-uppercase flight_inner_title">pkr</span>
+                        <span class="d-block flight_inner_sub">Pokhara</span>
+                        <label class="d-block label_duration">15 min</label>
+                        <label class="d-block label_day">Wednesday December 7</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="flight_schedule_info">
+                    <a href="javascript:void(0)" class="payment_link">
+                      <div class="flight_price">
+                        <span class="span_currency text-uppercase">Npr</span>
+                        <label class="label_price">3800</label>
+                        <span class="old_price">NPR 4200</span>
+                        <span class="d-block span_refund">Non Refundable</span>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="flight_schedule_info">
+                    <div class="flight_lugage d-grid">
+                      <div class="lugage_col">
+                        
+                        <div class="lugage_ic">
+                          <i class="las la-luggage-cart"></i>
+                        </div>
+                        <div class="lugage_info">
+                          <span class="lugage_title text-uppercase d-block">baggage</span>
+                          <span class="lugage_infos d-block">15Kg</span>
+                        </div>
+                      </div>
+
+                      <div class="lugage_col">
+                        
+                        <div class="lugage_ic">
+                          <i class="las la-suitcase"></i>
+                        </div>
+                        <div class="lugage_info">
+                          <span class="lugage_title text-uppercase d-block">hand carry</span>
+                          <span class="lugage_infos d-block">15Kg</span>
+                        </div>
+                  
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="flight_schedule_list">
+              <div class="flight_schedule_bg">
+                <div class="flight_schedule_top">
+                  <div class="flight_logo">
+                    <figure>
+                      <img src="images/logo.png" alt="title" class="img-fluid">
+                    </figure>
+                  </div>
+
+                  <div class="flight_code"><strong>SA663</strong></div>
+                </div>
+                <div class="flight_schedule_grid">
+                  <div class="flight_schedule_info">
+                    <div class="flight_inner_grid d-grid">
+                      <div class="flight_inner_list">
+                        <label class="d-block text-uppercase">Departure</label>
+                        <span class="d-block text-uppercase flight_inner_title">ktm</span>
+                        <span class="d-block flight_inner_sub">Kathmandu</span>
+                        <label class="d-block label_duration">15 min</label>
+                        <label class="d-block label_day">Wednesday December 7</label>
+                      </div>
+
+                      <div class="flight_inner_list ic_flight">
+                        <i class="bi bi-airplane-fill"></i>
+                      </div>
+
+                      <div class="flight_inner_list">
+                        <label class="d-block text-uppercase">arrival</label>
+                        <span class="d-block text-uppercase flight_inner_title">pkr</span>
+                        <span class="d-block flight_inner_sub">Pokhara</span>
+                        <label class="d-block label_duration">15 min</label>
+                        <label class="d-block label_day">Wednesday December 7</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="flight_schedule_info">
+                    <a href="javascript:void(0)" class="payment_link">
+                      <div class="flight_price">
+                        <span class="span_currency text-uppercase">Npr</span>
+                        <label class="label_price">3800</label>
+                        <span class="old_price">NPR 4200</span>
+                        <span class="d-block span_refund">Non Refundable</span>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="flight_schedule_info">
+                    <div class="flight_lugage d-grid">
+                      <div class="lugage_col">
+                        
+                        <div class="lugage_ic">
+                          <i class="las la-luggage-cart"></i>
+                        </div>
+                        <div class="lugage_info">
+                          <span class="lugage_title text-uppercase d-block">baggage</span>
+                          <span class="lugage_infos d-block">15Kg</span>
+                        </div>
+                      </div>
+
+                      <div class="lugage_col">
+                        
+                        <div class="lugage_ic">
+                          <i class="las la-suitcase"></i>
+                        </div>
+                        <div class="lugage_info">
+                          <span class="lugage_title text-uppercase d-block">hand carry</span>
+                          <span class="lugage_infos d-block">15Kg</span>
+                        </div>
+                  
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="flight_schedule_list">
+              <div class="flight_schedule_bg">
+                <div class="flight_schedule_top">
+                  <div class="flight_logo">
+                    <figure>
+                      <img src="images/logo.png" alt="title" class="img-fluid">
+                    </figure>
+                  </div>
+
+                  <div class="flight_code"><strong>SA663</strong></div>
+                </div>
+                <div class="flight_schedule_grid">
+                  <div class="flight_schedule_info">
+                    <div class="flight_inner_grid d-grid">
+                      <div class="flight_inner_list">
+                        <label class="d-block text-uppercase">Departure</label>
+                        <span class="d-block text-uppercase flight_inner_title">ktm</span>
+                        <span class="d-block flight_inner_sub">Kathmandu</span>
+                        <label class="d-block label_duration">15 min</label>
+                        <label class="d-block label_day">Wednesday December 7</label>
+                      </div>
+
+                      <div class="flight_inner_list ic_flight">
+                        <i class="bi bi-airplane-fill"></i>
+                      </div>
+
+                      <div class="flight_inner_list">
+                        <label class="d-block text-uppercase">arrival</label>
+                        <span class="d-block text-uppercase flight_inner_title">pkr</span>
+                        <span class="d-block flight_inner_sub">Pokhara</span>
+                        <label class="d-block label_duration">15 min</label>
+                        <label class="d-block label_day">Wednesday December 7</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="flight_schedule_info">
+                    <a href="javascript:void(0)" class="payment_link">
+                      <div class="flight_price">
+                        <span class="span_currency text-uppercase">Npr</span>
+                        <label class="label_price">3800</label>
+                        <span class="old_price">NPR 4200</span>
+                        <span class="d-block span_refund">Non Refundable</span>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="flight_schedule_info">
+                    <div class="flight_lugage d-grid">
+                      <div class="lugage_col">
+                        
+                        <div class="lugage_ic">
+                          <i class="las la-luggage-cart"></i>
+                        </div>
+                        <div class="lugage_info">
+                          <span class="lugage_title text-uppercase d-block">baggage</span>
+                          <span class="lugage_infos d-block">15Kg</span>
+                        </div>
+                      </div>
+
+                      <div class="lugage_col">
+                        
+                        <div class="lugage_ic">
+                          <i class="las la-suitcase"></i>
+                        </div>
+                        <div class="lugage_info">
+                          <span class="lugage_title text-uppercase d-block">hand carry</span>
+                          <span class="lugage_infos d-block">15Kg</span>
+                        </div>
+                  
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </section>
+          
+        </div>
+
+        <div class="flight_payment_col">
+          <div class="container">
+            <div class="flight_payment_flex">
+              <div class="flight_payment_left">
+                <div class="flight_payment_grid">
+                  <div class="flight_info_detail">
+                    <label>Departure Flight</label>
+                    <h2>Kathmandu (KTM) to Pokhara (PKR)</h2>
+                    <span>U4 601 07:00- 07:25</span>
+                  </div>
+
+                  <div class="flight_payment_detail">
+                    <span class="span_currency text-uppercase">Npr</span>
+                    <label class="label_price">3800</label>
+                    <span class="d-block span_refund">Non Refundable</span>
+                    <a href="javascript:void(0)" class="view_flight d-block" data-bs-toggle="modal" data-bs-target="#flightInfo">View details</a>
+                  </div>
+                </div>
+              </div>
+              <div class="flight_payment_right">
+                <button type="submit" class="btn btn_theme" data-bs-toggle="modal" data-bs-target="#loginFlight">Continue</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer_main">
+        <div class="container">
+          <div class="row">
+            <div class="col* col-md-4 col-lg-4 footer_left">
+              <a href="index.html">
+                <figure class="footer_logo">
+                  <img src="images/logo.svg" alt="title" class="img-fluid">
+                </figure>
+              </a>
+              <div class="location">
+                <h2>Sinamangal 44600 <br>
+                  Bagmati, Kathmandu</h2>
+              </div>
+
+              <div class="company_phone company_link">
+                <a href="telto:01-4110682">01-4110682,</a>
+                <a href="telto:01-4110642">01-4110642</a>
+              </div>
+
+              <div class="company_email company_link">
+                <a href="mailto:info@flysita.com">info@flysita.com</a>
+              </div>
+
+              <div class="company_infos_footer">
+                <p>Sita Air is an airline based in Kathmandu, Nepal, operating domestic services within Nepal. The airline was established in 2003</p>
+              </div>
+
+            </div>
+            <div class="col* col-md-8 col-lg-8 footer_right">
+              <div class="row">
+                <div class="col* col-md-4 col-lg-3 footer_list">
+                  <h3>Quick Links</h3>
+                  <ul>
+                    <li> <a href="index.html">Home</a></li>
+                    <li><a href="destination-list.html">Destination</a></li>
+                    <li> <a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+                </div>
+
+                <div class="col* col-md-4 col-lg-3 footer_list">
+                  <h3>Legal Policies</h3>
+                  <ul>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="single.html">Privacy Policy</a></li>
+                    <li><a href="single.html">Insurance Policy</a></li>
+                    <li><a href="single.html">Flight Fare Rules</a></li>
+                    <li><a href="single.html">Terms & Conditions</a></li>
+                  </ul>
+                </div>
+
+                <div class="col* col-md-4 col-lg-3 footer_list">
+                  <h3>Get to Know Us</h3>
+                  <ul>
+                    <li> <a href="index.html">Home</a></li>
+                    <li><a href="destination-list.html">Destination</a></li>
+                    <li> <a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+                </div>
+
+                <div class="col* col-md-4 col-lg-3 footer_list">
+                  <h3>Online Support</h3>
+                  <ul>
+                    <li> Direct: + 977 1 4152656</li>
+                    <li>+977 - 1 41523656 - Ext - 141, 142, 177, 178</li>
+                    <li> Email: u4tickets@flysitaair.com</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer_copyright">
+           <div class="copyright_flex d-flex">
+            <div class="copyright_left">
+              <p>© 2022 Sita Air.All right reserved</p>
+            </div>
+            <div class="copyright_right social_icon">
+              <ul>
+                <li><a href="#"><i class="lab la-facebook-f"></i></a></li>
+                <li><a href="#"><i class="lab la-twitter"></i></a></li>
+                <li><a href="#"><i class="lab la-linkedin-in"></i></a></li>
+                <li><a href="#"><i class="lab la-instagram"></i></a></li>
+                
+              </ul>
+            </div>
+           </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal fade" id="flightInfo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="flightInfoLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg modal_flight">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2>Trip Summary</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="payment_view_details">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>KTM TO PKR</th>
+                    <th>08-Dec-2022</th>
+                    <th>07:00 - 07:25 (25m)</th>
+                    <th>INR 2501.88/-</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>Adult</td>
+                    <td>INR 2250.00</td>
+                    <td>x1</td>
+                    <td>INR 2250.00</td>
+                  </tr>
+
+                  <tr>
+                    <td>PSC(Airport Tax)</td>
+                    <td>INR 310.00</td>
+                    <td>x1</td>
+                    <td>INR 2250.00</td>
+                  </tr>
+
+                  <tr>
+                    <td>Adult Discount</td>
+                    <td>INR 10.00</td>
+                    <td>x1</td>
+                    <td>INR 2250.00</td>
+                  </tr>
+
+                  <tr>
+                    <td colspan="4" class="p-0"><span class="fare_span">Fare Summary</span></td>
+                  </tr>
+
+                  <tr>
+                    <td>Adult</td>
+                    <td>INR 2250.00</td>
+                    <td>x1</td>
+                    <td>INR 2250.00</td>
+                  </tr>
+
+                  <tr>
+                    <td>PSC(Airport Tax)</td>
+                    <td>INR 310.00</td>
+                    <td>x1</td>
+                    <td>INR 2250.00</td>
+                  </tr>
+
+                  <tr>
+                    <td>Adult Discount</td>
+                    <td>INR 10.00</td>
+                    <td>x1</td>
+                    <td>INR 2250.00</td>
+                  </tr>
+
+                </tbody>
+
+                <tfoot>
+                  <tr>
+                    <td colspan="3"><label class="label_total">Total</label></td>
+                    <td><span class="span_amt">INR 2250.00</span></td>
+                  </tr>
+                </tfoot>
+              </table>
+              
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="loginFlight" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="loginFlightLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="close_btn">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="customer_form_wrap login_tabs">
+              <h2>Log in your account</h2>
+              <p class="login-info">There are no enrollment fees or shipping quotas. Simply provide your contact information, create a user ID and password.</p>
+              
+
+              <form>
+                <div class="form-group">
+                  <label class="login_title">Email <span class="astrick">*</span></label>
+                  <input type="text" name="" value="" class="form-control" placeholder="">
+                </div>
+
+                <div class="form-group">
+                  <label class="login_title">Password <span class="astrick">*</span></label>
+                  <div class="password_eye">
+                    <input id="" type="password" name="" value="" class="form-control password-field" placeholder="">
+                    <span toggle=".password-field" class="las la-eye-slash field-icon toggle-password"></span>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <div class="login_flex">
+                    <div class="loginLeft_flex">
+                      <div class="custom_control custom-control-inline">
+                        <input class="mr-2" id="check-1" type="checkbox"><label for="check-1">Remember Me</label> 
+                      </div>
+                    </div>
+
+                    <div class="loginRight_flex">
+                      <a href="#">Forget Password ?</a>
+                    </div>
+                  </div>
+                 
+                </div>
+
+                <div class="form-group login_btn">
+                  <button type="submit" value="" class="btn btn_theme">Login In</button>
+                </div>
+
+                <div class="form-group d-block d-md-none d-lg-none">
+                  <p>Are you a New Member ? <a href="login.html">Register Here</a></p>
+                </div>
+
+
+                <p class="my-4 text-muted text-center">--- Or connect with ---</p>
+
+                <div class="login_social_buttons">
+                  <a href="#" id="login-with-facebook" data-network="Facebook" class="social_account_button facebook_button">
+                    <i class="lab la-facebook-f"></i>
+                    <span> Sign In with Facebook</span>
+                  </a>
+
+                  <a href="#"  id="login-with-google" data-network="google" class="social_account_button google_button">
+                    <i class="lab la-google"></i>
+                      <span> Sign In with Google</span>
+                  </a>
+                </div>  
+
+              </form>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/main.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <script>
+      // payment Open //
+      $('.payment_link').on('click', function(){
+      $('.flight_payment_col').addClass('flight_payment_col-open');
+      });
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,9 @@
+@mixin transform-scale($value) {
+  transform: scale($value);
+}
+@mixin transition($value) {
+  transition: all ease-in-out ($value);
+}
+@mixin border-radius($value) {
+  border-radius: ($value);
+}

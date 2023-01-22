@@ -1,0 +1,96 @@
+.footer_main{
+  background: $footer_bg;
+  padding: 8rem 0 4rem;
+  margin-top: 6rem;
+}
+.footer_list{
+  h3{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 2.5rem;
+  }
+  ul{
+    margin: 0;
+    padding: 0;
+    li{
+      margin-bottom: 1.2rem;
+      list-style: none;
+      font-size: 1.4rem;
+      color: #d0d0d0;
+      a{
+        color: #d0d0d0;
+        &:hover{
+          color: $theme_color;
+        }
+      }
+    }
+  }
+}
+.footer_logo{
+  img{
+    height: 5rem;
+  }
+}
+.location{
+  h2{
+    color: #fff;
+    margin: 4rem 0 5rem;
+    line-height: 1.6;
+  }
+}
+.company_link{
+  a{
+    color: #d0d0d0;
+    text-decoration: underline;
+  }
+}
+.company_infos_footer{
+  margin-top: 4rem;
+    p{
+      color: #fff;
+  }
+}
+.copyright_flex{
+  align-items: center;
+  justify-content: space-between;
+}
+.copyright_left{
+  p{
+    margin-bottom: 0;
+    color: #d0d0d0;
+    font-size: 1.4rem;
+  }
+}
+.footer_copyright{
+  margin-top: 4rem;
+}
+.payment_partner{
+  background: rgba(255,255,255,.9);
+  border-radius: 0.5rem;
+  padding: 3rem;
+  margin-top: 3rem;
+  h3{
+    text-align: center;
+    color: $theme_color;
+    margin-bottom: 2rem;
+    font-weight: 600;
+  }
+  ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    column-gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    li{
+      list-style: none;
+      figure{
+        margin: 0;
+        img{
+          height: 4rem;
+        }
+      }
+    }
+  }
+}

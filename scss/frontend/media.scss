@@ -1,0 +1,201 @@
+@media only screen and (max-width: 479px){
+    .container, .container-sm, .container-md {
+      max-width: 100%;
+    }
+    .single_destination_content {
+      background: transparent;
+      padding: 0;
+      margin-left: 0;
+      margin-top: 3.8rem;
+      height: 100%;
+    }
+    .listing_col h3{
+      font-size: 1.8rem;
+    }
+    .flight_bg{
+      max-width: 100%;
+    }
+    .qty_flex{
+      grid-template-columns: 1fr;
+      span{
+        margin-bottom: 1rem;
+        display: block;
+      }
+    }
+    .top_header-left{
+      img{
+        height: 3.5rem;
+      }
+    }
+    .flight_search_grid{
+      grid-template-columns: 1fr;
+      row-gap: 2rem;
+    }
+    .title_head h2{
+      font-size: 2.8rem;
+    }
+    .listing_col{
+      margin-bottom: 2rem;
+    }
+    .title_head {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+    .view_margin {
+      margin-left: initial;
+      margin-top: 15px;
+    }
+    .section_top {
+      padding-top: 5rem;
+    }
+    .top_header-flex {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .top_header-right {
+      margin-left: initial;
+    }
+    .navbar_support.dropdown-common .dropdown-menu[style] {
+      left: -0 !important;
+      
+    }
+    .dropdown-menu.support-dropdown-menu{
+      min-width: 30rem;
+    }
+    .support_grid{
+      grid-template-columns: 1fr;
+    }
+    .flight_search_inner .flight_search_grid{
+      grid-template-columns: auto auto auto;
+    }
+    .flight_lugage{
+      display: none!important;
+    }
+    .flight_schedule_grid{
+      grid-template-columns: 1fr;
+    }
+    .flight_progress ul{
+      max-width: 100%;
+    }
+    .payment_order_grid{
+      grid-template-columns: 1fr 1fr;
+    }
+    .contact_list {
+      margin-bottom: 3rem;
+    }
+    .contact_form {
+      max-width: 100%;
+    }
+    .about-one,
+    .about-second {
+      max-width: 50%;
+    }
+    .about-second figure {
+      margin: 0;
+      margin-left: 0;
+    }
+  }
+  @media only screen and (min-width: 480px) and (max-width: 767px){
+    .container, .container-sm, .container-md {
+      max-width: 100%;
+    }
+    .single_destination_content {
+      background: transparent;
+      padding: 0;
+      margin-left: 0;
+      margin-top: 3.8rem;
+      height: 100%;
+    }
+    .listing_col h3{
+      font-size: 1.8rem;
+    }
+    .flight_bg{
+      max-width: 100%;
+    }
+    .qty_flex{
+      grid-template-columns: 1fr;
+      span{
+        margin-bottom: 1rem;
+        display: block;
+      }
+    }
+    .top_header-left{
+      img{
+        height: 3.5rem;
+      }
+    }
+    .flight_search_grid{
+      grid-template-columns: 1fr;
+      row-gap: 2rem;
+    }
+    .title_head h2{
+      font-size: 2.8rem;
+    }
+    .listing_col{
+      margin-bottom: 2rem;
+    }
+    .navbar_support.dropdown-common .dropdown-menu[style] {
+      left: -170px !important;
+    }
+    .flight_search_inner .flight_search_grid{
+      grid-template-columns: auto auto auto;
+    }
+    .flight_lugage{
+      display: none!important;
+    }
+    .flight_schedule_grid{
+      grid-template-columns: 1fr;
+    }
+    .flight_progress ul{
+      max-width: 100%;
+    }
+    .payment_order_grid{
+      grid-template-columns: 1fr 1fr;
+    }
+    .contact_list {
+      margin-bottom: 3rem;
+    }
+    .contact_form {
+      max-width: 100%;
+    }
+    .about-one,
+    .about-second {
+      max-width: 50%;
+    }
+    .about-second figure {
+      margin: 0;
+      margin-left: 0;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px){
+    .container, .container-sm, .container-md {
+      max-width: 98%;
+    }
+    .single_destination_content {
+      background: transparent;
+      padding: 0;
+      margin-left: 0;
+      margin-top: 3.8rem;
+      height: 100%;
+    }
+    .listing_col h3{
+      font-size: 1.8rem;
+    }
+    .flight_bg{
+      max-width: 100%;
+    }
+    .qty_flex{
+      grid-template-columns: 1fr;
+      span{
+        margin-bottom: 1rem;
+        display: block;
+      }
+    }
+  
+  }
+  @media only screen and (min-width: 992px) and (max-width: 1200px){
+  .container, .container-sm, .container-md {
+    max-width: 98%;
+  }
+  }
